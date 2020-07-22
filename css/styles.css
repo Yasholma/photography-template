@@ -167,6 +167,7 @@ header > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -25px;
   animation: animated-arrow 0.8s cubic-bezier(0.1, 0.7, 1, 0.1) infinite;
 }
 
