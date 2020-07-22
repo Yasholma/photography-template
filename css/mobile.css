@@ -1,0 +1,53 @@
+/* Header Section */
+.nav-item .nav-link {
+  padding: 10px 0 !important;
+}
+
+/* Accolades section */
+.accolades .accolades-item {
+  margin-top: 30px
+}
+
+/* Portfolio Section */
+.portfolio .gallery {
+  display: block; 
+}
+
+.portfolio .gallery img {
+  margin-top: 20px
+}
+
+.image-6 {
+  display: block
+}
+
+.image-6 {
+  width: 100%
+}
+
+.image-6 .img-1 {
+  padding-right: 0
+}
+
+.image-6 .img-2 {
+  padding-left: 0
+}
+
+/* Contact Section */
+.contact form {
+  margin-top: 40px;
+}
+
+/* Footer Section */
+.footer {
+  text-align: center
+}
+
+.footer .social-icons ul {
+  justify-content: center;
+  margin-top: 30px
+}
+
+.footer .social-icons li {
+  margin: 0px 10px
+}
