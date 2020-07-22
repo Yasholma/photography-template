@@ -1,3 +1,8 @@
+// Preloader
+$(window).on('load', () => {
+  $('#preloader').fadeOut(500)
+})
+
 $(function () {
   // Smooth Scrolling
   $('a').on('click', function (event) {

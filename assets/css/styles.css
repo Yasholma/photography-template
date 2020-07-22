@@ -23,6 +23,29 @@ body {
   color: #fff;
 }
 
+/* Preloader */
+#preloader {
+  position: fixed;
+  background: #000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+
+#preloader .status {
+  background: url('../images/preloader.gif');
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
