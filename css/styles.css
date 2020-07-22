@@ -162,12 +162,12 @@ header > a {
   width: 50px;
   left: 50%;
   transform: translateX(-50%);
-  margin-left: -25px;
   border: 1px solid #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -25px;
   animation: animated-arrow 0.8s cubic-bezier(0.1, 0.7, 1, 0.1) infinite;
 }
 
