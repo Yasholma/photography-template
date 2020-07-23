@@ -102,11 +102,12 @@ ul {
 
 /* Header Section */
 header {
-  background: url('../images/showcase-img.png') no-repeat left center/cover;
+  background: url('../images/showcase-img.png') no-repeat left center;
   color: #fff;
   height: 100vh;
   padding-top: 20px;
   position: relative;
+  background-size: 60%;
 }
 
 header .container {
@@ -117,7 +118,7 @@ header .container {
   z-index: 999;
 }
 
-.navbar .nabar-brand {
+.navbar .navbar-brand {
   font-size: 30px;
 }
 
@@ -165,7 +166,7 @@ header .container {
 }
 
 .showcase {
-  height: calc(100vh - 76px);
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +176,7 @@ header .container {
 }
 
 .showcase .photographer-name {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
 }
 
 header > a {

@@ -1,6 +1,16 @@
 /* Header Section */
+
+header {
+  background: url('../images/showcase-img.png') no-repeat left center/cover;
+}
 .nav-item .nav-link {
   padding: 10px 0 !important;
+}
+
+.showcase .photographer-name {
+  font-size: 3.8rem;
+  line-height: 1;
+  margin: 1rem 0;
 }
 
 /* Accolades section */
