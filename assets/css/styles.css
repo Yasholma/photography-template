@@ -357,6 +357,17 @@ header .faint-watermark {
 
 @media (max-width: 991px) {
   /* Header */
+  header {
+    background: url('../images/showcase-img.png') no-repeat left center;
+    background-size: 60%;
+  }
+
+  .showcase .photographer-name {
+    font-size: 4.3rem;
+    line-height: 1;
+    margin: 1rem 0;
+  }
+
   .nav-item {
     margin: 0;
   }
