@@ -1,8 +1,10 @@
 /* Header Section */
 
-header {
-  background: url('../images/showcase-img.png') no-repeat left center/cover;
+.hero-img {
+  width: 160%;
+  max-width: 153%;
 }
+
 .nav-item .nav-link {
   padding: 10px 0 !important;
 }

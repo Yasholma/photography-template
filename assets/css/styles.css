@@ -64,10 +64,21 @@ ul {
 .faint-watermark {
   position: absolute;
   color: var(--faint-color);
-  font-size: 140px;
-  line-height: 160px;
+  font-size: 110px;
+  line-height: 140px;
   font-weight: bold;
   text-align: center;
+  z-index: 200;
+}
+
+.faint-watermark.home {
+  margin-top: -11rem;
+  padding-right: 3rem;
+}
+
+.faint-watermark.about {
+  margin-top: -25rem;
+  padding-left: 4rem;
 }
 
 .heading-1 {
@@ -102,12 +113,23 @@ ul {
 
 /* Header Section */
 header {
-  background: url('../images/showcase-img.png') no-repeat left center;
+  /* background: url('../images/showcase-img.png') no-repeat left center; */
   color: #fff;
   height: 100vh;
   padding-top: 20px;
   position: relative;
-  background-size: 60% 90%;
+  /* background-size: 60% 90%; */
+  position: relative;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  display: block;
+  width: 65%;
+  height: 100vh;
 }
 
 header .container {
@@ -207,14 +229,21 @@ header > a {
 header .faint-watermark {
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 
 /* About Me Section */
+
+.faint-watermark.about {
+  margin-top: -26rem;
+  padding-left: 4rem;
+}
+
 .about-me {
   text-align: center;
   padding: 70px 0;
   position: relative;
+  margin-top: 6rem;
 }
 
 .about-me-content {
@@ -242,8 +271,10 @@ header .faint-watermark {
 }
 
 /* Portfolio Section */
+
 .portfolio {
   position: relative;
+  margin-top: 8rem;
 }
 
 .portfolio #isotope-filters button {
@@ -298,7 +329,8 @@ header .faint-watermark {
   transform: translateY(-50%);
   right: 0;
   font-size: 100px;
-  line-height: 100px;
+  margin-top: 0rem;
+  line-height: 165px;
 }
 
 /* Contact Section */
@@ -345,6 +377,25 @@ header .faint-watermark {
 }
 
 /* Media Queries */
+@media (min-width: 2000px) {
+  .hero-img {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .faint-watermark {
+    font-size: 140px;
+    line-height: 140px;
+  }
+
+  .faint-watermark.home {
+    padding-left: 0;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .portfolio-filters img.lg {
     height: 427px;
@@ -357,9 +408,8 @@ header .faint-watermark {
 
 @media (max-width: 991px) {
   /* Header */
-  header {
-    background: url('../images/showcase-img.png') no-repeat left center;
-    background-size: 60%;
+  .hero-img {
+    width: 60%;
   }
 
   .showcase .photographer-name {
@@ -383,5 +433,14 @@ header .faint-watermark {
   .lifestyle {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .portfolio .faint-watermark {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 100px;
+    margin-top: 0rem;
+    line-height: 122px;
   }
 }
